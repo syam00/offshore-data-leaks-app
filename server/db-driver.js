@@ -15,14 +15,14 @@ const params = {"name": "Ross, Jr. - Wilbur Louis"};
 
 const session = driver.session({database:"neo4j"});
 
-session.run(query, params)
-  .then((result) => {
-    result.records.forEach((record) => {
-        console.log(record.get('name'));
-    });
-    session.close();
-    driver.close();
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+// session.run(query, params)
+//   .then((result) => {
+//     result.records.forEach((record) => {
+//         console.log(record.get('name'));
+//     });
+//     session.close();
+//     driver.close();
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
