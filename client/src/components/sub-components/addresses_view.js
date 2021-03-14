@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ForceGraph2D, ForceGraph3D, ForceGraphVR, ForceGraphAR } from 'react-force-graph';
+import { ForceGraph2D } from 'react-force-graph';
 
 const inputData = {
     "nodes": [
@@ -23,12 +23,12 @@ const inputData = {
 }
 
 class addresses_view extends Component {
-    
+
     render() {
         return (
             <div>
                 Addresses
-                <ForceGraph2D width="100"
+                <ForceGraph2D 
                     graphData={inputData}
                 />
             </div>

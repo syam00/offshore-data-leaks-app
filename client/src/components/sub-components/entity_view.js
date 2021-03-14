@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ForceGraph2D, ForceGraph3D, ForceGraphVR, ForceGraphAR } from 'react-force-graph';
+import { ForceGraph2D } from 'react-force-graph';
 
 const inputData = {
     "nodes": [
