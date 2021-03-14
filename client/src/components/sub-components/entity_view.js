@@ -22,12 +22,12 @@ const inputData = {
     ]
 }
 
-class officers_view extends Component {
-
+class entity_view extends Component {
+    
     render() {
         return (
             <div>
-                Officers
+                Entities
                 <ForceGraph2D width="100px"
                     graphData={inputData}
                 />
@@ -36,4 +36,4 @@ class officers_view extends Component {
     }
 }
 
-export default officers_view;
+export default entity_view;
