@@ -23,5 +23,7 @@ app.use(cookieParser());
 app.use(helmet());
 
 //Router configuration
+const officerDataRouter = require('./routes/officer-data-router');
+app.use('/v1/officer', officerDataRouter);
 
 module.exports = app;
