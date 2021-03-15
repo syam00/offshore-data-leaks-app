@@ -22,24 +22,12 @@ const inputData = {
     ]
 }
 
-class officers_view extends Component {
-
-    getOfficers = () => {
-        var requestOptions = {
-            method: 'GET',
-            redirect: 'follow'
-          };
-          
-          fetch("http://localhost:5000/v1/officer", requestOptions)
-            .then(response => response.text())
-            .then(result => console.log(result))
-            .catch(error => console.log('error', error));
-    }
-
+class entity_view extends Component {
+    
     render() {
         return (
             <div>
-                Officers
+                Entities
                 <ForceGraph2D width="100px"
                     graphData={inputData}
                 />
@@ -48,4 +36,4 @@ class officers_view extends Component {
     }
 }
 
-export default officers_view;
+export default entity_view;

@@ -11,7 +11,7 @@ function getOfficer(inputText) {
         try {
 
             const query = `MATCH p=(n:Officer)-[r]-(m) WHERE n.name CONTAINS $name
-            RETURN p LIMIT 1000`;
+            RETURN p LIMIT 10`;
 
             const params = { "name": inputText };
 

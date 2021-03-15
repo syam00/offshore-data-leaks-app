@@ -26,4 +26,16 @@ app.use(helmet());
 const officerDataRouter = require('./routes/officer-data-router');
 app.use('/v1/officer', officerDataRouter);
 
+const intermediaryDataRouter = require('./routes/intermediary-data-router');
+app.use('/v1/intermediary', intermediaryDataRouter);
+
+
+const entityDataRouter = require('./routes/entity-data-router');
+app.use('/v1/entity', entityDataRouter);
+
+
+const addressDataRouter = require('./routes/address-data-router');
+app.use('/v1/address', addressDataRouter);
+
+
 module.exports = app;
