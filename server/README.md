@@ -1,5 +1,13 @@
+# Introduction
+
+    A backend server application written in node.js to serve the clients
+
+# How to install?
 
 ````
-    docker build -t username/offshore-data-leak-sever
-    docker run {image_id}
+    npm install
+    npm start
 ````
+
+
+
